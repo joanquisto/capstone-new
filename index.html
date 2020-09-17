@@ -14,6 +14,10 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <style>
@@ -94,8 +98,9 @@ nav{
  width: 700px;
  position: absolute;
  left: 35%;
- top: 50%;
+ top: 40%;
  transform: translate(-20%,-50%);
+
 }
 .name p:nth-child(1),.name .details{
  color:#6c707c;
@@ -108,12 +113,16 @@ nav{
  letter-spacing: 4px;
  color:#292929;
 }
-.jc-pic {
+
+ @media only screen and (min-width: 768px) {
+         .jc-pic {
   border-radius: 8px;
-  box-shadow: 0 0 20px #000000b3;
-  width: 10%;
-  height: auto;
+  float: left;
+  height: 120px; / height: 50%;
+        
+     }
 }
+
 
 .cv-btn{
  width:200px;
@@ -770,11 +779,11 @@ width: 100%;
 
                              <div class="toggle"></div>
                              <ul class="menu">
-                             <li class="active"><a href="#" >Home</a></li> 
-                             <li><a href="#">About</a></li> 
-                             <li><a href="#">Projects</a></li> 
-                             <li><a href="#">Portfolio</a></li>  
-                             <li><a href="#">Contact</a></li> 
+                             <li class="active"><a href="#main">Home</a></li> 
+                             <li><a href="#About">About</a></li> 
+                             <li><a href="#Projects">Projects</a></li> 
+                             <li><a href="#Portfolio">Portfolio</a></li>  
+                             <li><a href="#Contact">Contact</a></li> 
                              </ul>
 
 
@@ -786,9 +795,10 @@ width: 100%;
                             <div class="container-fluid"> 
                                     <div class="row name">
                                            <div class="col-6">
+                                           
                                                  <h5>Hello</h5>
-                                                  <h1>I'm <font color="#BC5221">Joana </font></h1>
-                                                  <p class="details">I am a Productive and efficient graduate of Computer Science Major in Computing with five years experiece of Network System Administration, and Technical Support Scpecialist of   Internet Service Provider based in the United States and Cananda. Extensive knowledge in Computer Hardware troubleshooting. </p>
+                                                  <h1 class="animate__animated animate__bounce animate__repeat-3">I'm <font color="#BC5221">Joana</font></h1>
+                                                  <p class="details">I am a Productive and efficient graduate of Computer Science Major in Computing with five years experiece of Network System Administration. </p>
                                           </div>
                                              <div class="col-6 jc-pic">
                                                  <img width="100%" src="./assets/Images/jc.jpg" width="400" height="400" class="img-fluid"alt="picture of me">
@@ -829,7 +839,7 @@ width: 100%;
                      <section id="services">
 
                                  <div class="s-heading">
-                                           <h1>Services</h1>
+                                           <h1>Projects</h1>
                                            <p>Here Is The Some Servies Which We Provide You.</p>
                                      </div>
 
@@ -839,8 +849,8 @@ width: 100%;
 
                                              <div class="s-b-img">
 
-                                              <div class="s-type">Front-End</div>
-                                              <img src="images/s1.png">
+                                              <div class="s-type">Project1</div>
+                                              <img src="./assets/Images/computer.jpg">
                                      </div>
 
                                      <div class="s-b-text">
@@ -850,8 +860,8 @@ width: 100%;
                                      <div class="s-box">
 
                                      <div class="s-b-img">
-                                              <div class="s-type">Back-End</div>
-                                              <img src="images/s2.png">
+                                              <div class="s-type">Project2</div>
+                                              <img src="./assets/Images/markus.jpg">
                                      </div>
 
                                       <div class="s-b-text">
@@ -861,8 +871,8 @@ width: 100%;
 
                                       <div class="s-box">
                                              <div class="s-b-img">
-                                              <div class="s-type">SEO</div>
-                                              <img src="images/s3.jpg">
+                                              <div class="s-type">Project3</div>
+                                              <img src="./assets/Images/stonecold.jpg">
                                       </div>
 
                                        <div class="s-b-text">
