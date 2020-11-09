@@ -271,12 +271,7 @@ html {
   }
 }
 
-#about-us {
-  background-image: url(images/keymouse.jpg);
-  background-size: 150px;
-  width: auto;
-  height: auto;
-}
+
 .banner {
   position: absolute;
   top: 25%;
@@ -305,7 +300,7 @@ html {
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   opacity: 0;
-  animation: moveBanner 1s 0.7s forwards;
+  animation: moveBanner 2s 0.7s forwards;
 }
 .banner p {
   font-family: 'Cousine', monospace;
@@ -316,23 +311,22 @@ html {
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   opacity: 0;
-  animation: moveBanner 1s 0.7s forwards;
+  animation: moveBanner 2s 0.7s forwards;
 }
 
 .banner button {
-  width: 25rem;
-  height: 7rem;
+  width: 15rem;
+  height: 5rem;
   background-color: #c29525;
   border-radius: 50px;
   font-family: "Muli", serif;
-  font-size: 2rem;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  color: white;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
   opacity: 0;
-  animation: moveBanner 1s 0.9s forwards;
+  animation: moveBanner 2s 0.9s forwards;
 }
 
 @keyframes moveBanner {
@@ -499,6 +493,7 @@ html {
 }
 
 .service-header h3 {
+
   font-family: "Baloo Da 2", serif;
   font-size: 2.6rem;
   line-height: 2.6rem;
@@ -520,9 +515,10 @@ html {
 
 .about-us-img-wrapper img {
   border-radius: 25px;
-  width: 100%;
-  height: 120%;
+  width: 90%;
+  height: 100%;
   object-fit: cover;
+
   
 }
 
@@ -637,7 +633,7 @@ html {
 
 .contact-wrapper {
   width: 60%;
-  height: 75rem;
+  height: 60rem;
   display: flex;
   box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
 }
@@ -657,7 +653,7 @@ html {
 
 .contact-heading {
   font-family: "Baloo Da 2", serif;
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 300;
   color: #272727;
   margin-bottom: 5rem;
@@ -680,7 +676,7 @@ html {
   background-color: transparent;
   border: none;
   border-bottom: 0.2rem dashed #636363;
-  margin: 3rem 0;
+  margin: 1rem 0;
   padding: 1rem 1rem 1rem 0;
   font-family: "Muli", serif;
   font-size: 1.6rem;
@@ -688,11 +684,11 @@ html {
 }
 
 .input-group input {
-  height: 4rem;
+  height: 1rem;
 }
 
 .input-group textarea {
-  max-height: 7rem;
+  max-height: 1rem;
   max-width: 45rem;
 }
 
@@ -704,7 +700,7 @@ html {
   position: absolute;
   left: 0;
   font-family: "Baloo Da 2", serif;
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: #4b4b4b;
   text-transform: uppercase;
   pointer-events: none;
@@ -726,24 +722,26 @@ html {
 
 .submit-btn {
   width: 45rem;
-  height: 5rem;
+  height: 4rem;
   background-color: #c29525;
   color: #fff;
   border: none;
-  margin-top: 2rem;
+  margin-top: 0rem;
   font-family: "Muli", serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   cursor: pointer;
   text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+
 }
 
 .footer {
   width: 100%;
-  height: 15rem;
+  height: 7rem;
   background-color: #17181b;
   display: flex;
   justify-content: center;
@@ -753,7 +751,7 @@ html {
 .footer-content {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
 }
 
 .copyright {
@@ -784,7 +782,7 @@ html {
   font-size: 2rem;
   color: #fff;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+
 }
 
 @media (max-width: 1500px) {
@@ -804,6 +802,22 @@ html {
   .footer-content {
     width: 80%;
   }
+    .submit-btn {
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
 }
 
 @media (max-width: 1400px) {
@@ -850,6 +864,23 @@ html {
   .service:nth-child(6) {
     grid-column: 11 / 15;
   }
+    .submit-btn {
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
 }
 
 @media (max-width: 1300px) {
@@ -879,6 +910,29 @@ html {
   .field {
     margin: 2rem 0;
   }
+
+    .footer {
+    height: 15rem;
+  }
+   .submit-btn {
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
 }
 
 @media (max-width: 1000px) {
@@ -934,6 +988,7 @@ html {
 
   .submit-btn {
     width: 55rem;
+    height: 1rem;
   }
 
   .footer-content {
@@ -947,6 +1002,22 @@ html {
     order: 1;
     margin-top: 3rem;
   }
+  .submit-btn {
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
 }
 
 @media (max-width: 700px) {
@@ -968,8 +1039,21 @@ html {
   }
 
   .submit-btn {
-    width: 35rem;
-  }
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
 }
 
 @media (max-width: 500px) {
@@ -991,6 +1075,37 @@ html {
   }
 
   .footer {
-    height: 18rem;
+    height: 15rem;
   }
+  .submit-btn {
+    width: 35rem;
+    height: 1rem;
+  }
+  .submit-btn {
+  width: 45rem;
+  height: 4rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 4rem;
+  font-family: "Muli", serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
+}
+
+#error_message{
+ 
+  color: red; 
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+
