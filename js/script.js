@@ -15,6 +15,7 @@ document.querySelector(".scroll-btn").addEventListener("click", () => {
   }, 1000);
 });
 
+
 function validate(){
   var name = document.getElementById("name").value;
   var subject = document.getElementById("subject").value;
@@ -51,6 +52,9 @@ function validate(){
     error_message.innerHTML = text;
     return false;
   }
+
   alert("Message Sent Successfully!");
   return true;
+ document.getElementById("myform").reset();
+ 
 }
